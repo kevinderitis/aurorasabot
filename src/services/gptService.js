@@ -151,7 +151,7 @@ export const telegramBotMsg = async (name, prompt, chatId) => {
             await updateLeadByMainThreadId(chatId, response.threadId);
         }
 
-        return message;
+        return response.response;
     } catch (error) {
         console.log(error);
         throw error;
